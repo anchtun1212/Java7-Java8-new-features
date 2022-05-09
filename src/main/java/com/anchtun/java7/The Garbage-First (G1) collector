@@ -1,0 +1,3 @@
+The Garbage-First (G1) collector is a server-style garbage collector, 
+targeted for multi-processor machines with large memories.
+It meets garbage collection (GC) pause time goals with a high probability, while achieving high throughput.
