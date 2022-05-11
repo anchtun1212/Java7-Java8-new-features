@@ -1,10 +1,10 @@
-package com.anchtun.java8.defaultmethod;
+package com.anchtun.java8.interfaces.defaultmethod;
 
-public class Mercedes implements Vehicle {
+public class Bmw implements Vehicle {
 
 	@Override
 	public int getSpeed() {
-		return 80;
+		return 100;
 	}
 
 	@Override
@@ -12,11 +12,16 @@ public class Mercedes implements Vehicle {
 		System.out.println("Brakes applyed");
 	}
 
+	// override the default method
+	@Override
+	public void autoPilot() {
+		System.out.println("AutoPilot system by BMW");
+	}
+	
 	public static void main(String[] args) {
-		Mercedes mercedes = new Mercedes();
+		Bmw mercedes = new Bmw();
 		System.out.println("The speed is= " + mercedes.getSpeed());
 		mercedes.applyBrake();
-		// call the default method WITHOUT override it
 		mercedes.autoPilot();
 	}
 }

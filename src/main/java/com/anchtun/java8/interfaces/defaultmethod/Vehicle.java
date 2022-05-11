@@ -1,4 +1,4 @@
-package com.anchtun.java8.defaultmethod;
+package com.anchtun.java8.interfaces.defaultmethod;
 
 public interface Vehicle {
 
