@@ -4,13 +4,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SuppressedExceptions {
-	
+
 	/**
 	 * new two methods added in Java 7
 	 * Throwable.getSuppressed()
 	 * Throwable.addSuppressed(aThrowable)
 	 */
-	
+
 
 	private static final Logger LOGGER = Logger.getLogger(SuppressedExceptions.class.getName());
 
@@ -22,7 +22,7 @@ public class SuppressedExceptions {
 			// we loose the truck of the original exception
 			LOGGER.log(Level.SEVERE, e.getMessage());
 		}
-		
+
 		// withJava7
 		// from Java7 when you log the exception, the original exception will be given to the user
 		// all the subsequent exceptions will be present in getSuppressed

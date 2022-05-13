@@ -10,10 +10,10 @@ public class DiamondOperator {
 		beforeJava7();
 		withJava7();
 	}
-	
+
 	// before Java 7 we have to create an object with generic type on both side of the expression
 	private static void beforeJava7() {
-		Map<Integer, String> map = new HashMap<Integer, String>();
+		Map<Integer, String> map = new HashMap<>();
 		map.put(1, "Anchtun");
 		map.put(2, "Mohamed");
 		map.put(3, "Aymen");

@@ -3,7 +3,7 @@ package com.anchtun.java7;
 import java.util.Objects;
 
 /**
- * 
+ *
  * java.util.Objects consists of utility static methods for operating on objects.
  * Those methods include null checks, computing hasCode, comparing two objects, returning a String for an Object.
  * Have two methods:

@@ -30,7 +30,7 @@ public class JDBCImprovements {
 			throw e;
 		}
 	}
-	
+
 	private static void createJdbcRowSet() throws Exception {
 		try (JdbcRowSet jrs = RowSetProvider.newFactory().createJdbcRowSet();) {
 			jrs.setUrl("jdbc:mysql://localhost:3306/test");
@@ -45,5 +45,5 @@ public class JDBCImprovements {
 			throw e;
 		}
 	}
-	
+
 }

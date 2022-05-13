@@ -9,7 +9,7 @@ public class AnonymousVSLambda {
 	public void complexCalculation() {
 		int localSum = 0;
 		ArithmeticOperation addition = (a, b) -> {
-			// we can't change the value local variables 
+			// we can't change the value local variables
 			//(local variable inside lambda expression acts like final variable; we can use them only)
 			// all method local variables are stored in the stack, whereas class instance variable, and static variables
 			// are stored in heap

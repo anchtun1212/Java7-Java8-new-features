@@ -17,7 +17,7 @@ public class Bmw implements Vehicle {
 	public void autoPilot() {
 		System.out.println("AutoPilot system by BMW");
 	}
-	
+
 	public static void main(String[] args) {
 		Bmw mercedes = new Bmw();
 		System.out.println("The speed is= " + mercedes.getSpeed());

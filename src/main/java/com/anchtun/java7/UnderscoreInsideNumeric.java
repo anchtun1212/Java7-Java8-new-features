@@ -5,7 +5,7 @@ package com.anchtun.java7;
  * The compiler will remove them internally.
  * Not allowed at the beginning or at the end of a number.
  * Not allowed adjacent to the decimal point / L/F suffix that we use to indicate Long/float.
- * 
+ *
  */
 public class UnderscoreInsideNumeric {
 

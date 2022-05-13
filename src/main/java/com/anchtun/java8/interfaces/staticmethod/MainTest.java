@@ -1,7 +1,7 @@
 package com.anchtun.java8.interfaces.staticmethod;
 
 /**
- * 
+ *
  * we can execute main method inside interface
  *
  */

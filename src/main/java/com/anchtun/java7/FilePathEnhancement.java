@@ -12,7 +12,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 /**
- * 
+ *
  * Bellow are new interfaces and classes created:
  * java.nio.file.Path
  * java.nio.file.Paths
@@ -24,7 +24,7 @@ import java.util.List;
  * for chat application we will have a million of sockets (little text to transfer like: hi, hello...) so use nio (non-blocking)
  * io works more with the streams (with stream you can read the data at this point of time)
  * nio works more with buffers (with buffer you can move back and forward; the data will be buffered in the cache)
- * 
+ *
  */
 public class FilePathEnhancement {
 

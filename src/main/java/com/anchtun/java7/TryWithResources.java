@@ -43,7 +43,7 @@ public class TryWithResources {
 		}
 		// the br resource will be closed automatically
 	}
-	
+
 	/**
 	 * use the new interface in Java 7: AutoCloseable
 	 */

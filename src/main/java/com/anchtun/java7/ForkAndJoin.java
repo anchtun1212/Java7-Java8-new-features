@@ -1,6 +1,7 @@
 package com.anchtun.java7;
 
 import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveAction;
 
 /**
@@ -24,7 +25,7 @@ public class ForkAndJoin extends RecursiveAction {
 		} else {
 			ForkAndJoin f1 = new ForkAndJoin(n - 1);
 			ForkAndJoin f2 = new ForkAndJoin(n - 2);
-			ForkAndJoin.invokeAll(f1, f2);
+			ForkJoinTask.invokeAll(f1, f2);
 			number = f1.number + f2.number;
 		}
 	}

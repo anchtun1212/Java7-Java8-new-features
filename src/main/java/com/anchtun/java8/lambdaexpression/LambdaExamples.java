@@ -28,7 +28,7 @@ public class LambdaExamples {
 		method1.sayAlShahadatan();
 		method2.sayAlShahadatan();
 	}
-	
+
 	private static void voidMethodWithOneParam() {
 		// here the (input) is the parameter of the abstract method in VoidMethodWithOneParam
 		// if there is only one param we can remove parenthesis () and write the parameter only in the right side
@@ -39,7 +39,7 @@ public class LambdaExamples {
 		method1.printWord("Anchtun");
 		method2.printWord("Mohamed");
 	}
-	
+
 	private static void voidMethodWithTwoParams() {
 		VoidMethodWithTwoParams method1 = (a, b) -> System.out
 				.println("Multiplication of " + a + " and " + b + " is: " + a * b);
@@ -51,7 +51,7 @@ public class LambdaExamples {
 		method1.printResult(5, 12);
 		method2.printResult(5, 12);
 	}
-	
+
 	private static void ReturnMethodWithTwoParams() {
 		// when you use {}: mean multiple statements you should write the keyword return
 		ReturnMethodWithTwoParams method1 = (a, b) -> {

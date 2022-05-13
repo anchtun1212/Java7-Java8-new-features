@@ -23,7 +23,7 @@ public class OptionalExample {
 		String arr[] = new String[5];
 
 		arr[1] = "Anchtun";
-		
+
 		// create an empty Object
 		Optional<String> empty = Optional.empty();
 		System.out.println("Create an empty Object: " + empty);
@@ -42,7 +42,7 @@ public class OptionalExample {
 		// will print the value because ifPresent = true
 		str1.ifPresent(System.out::println);
 		System.out.println("Value at index 1: " + str1.get());
-		
+
 		// not empty Optional
 		Optional<String> notEmptyOptional = Optional.of("Mohamed");
 		// empty Optional
@@ -51,7 +51,7 @@ public class OptionalExample {
 		System.out.println("notEmptyOptional to UpperCase:" + notEmptyOptional.map(String::toUpperCase));
 		// will NOT throw NullPointerException
 		System.out.println("emptyOptional to UpperCase:" + emptyOptional.map(String::toUpperCase));
-		
+
 		// use Optional twice
 		Optional<Optional<String>> doubleNotEmptyOptional = Optional.of(Optional.of("Mohamed"));
 		System.out.println("doubleNotEmptyOptional value: " + doubleNotEmptyOptional);
@@ -63,22 +63,22 @@ public class OptionalExample {
 		Optional<String> country = Optional.of("Tunisia");
 		// empty Optional
 		Optional<String> emptyCountry = Optional.empty();
-		
+
 		// filter on Optional
 		System.out.println(country.filter(i -> i.equals("tunisia")));// empty Optional
 		System.out.println(country.filter(i -> i.equalsIgnoreCase("tunisia")));// Optional[Tunisia]
 		System.out.println(emptyCountry.filter(i -> i.equalsIgnoreCase("tunisia")));// empty Optional
-		
+
 		// isPresent: return true if resent else return false
 		if (country.isPresent()) {
 			System.out.println("Ah nice you are from: " + country.get());
 		}
-		
+
 		// we can create two lambda expressions for each case
 		country.ifPresentOrElse(
 				v -> System.out.println("Your country is:" + v),
 				() -> System.out.println("There is no country"));
-		
+
 		// ifPresent: will execute a given method if present
 		country.ifPresent(c -> System.out.println("Hello! again you country is: " + c));
 		// will not print anything
@@ -87,7 +87,7 @@ public class OptionalExample {
 		// if there is no country print: There is no country!
 		System.out.println(country.orElse("There is no country!"));
 		System.out.println(emptyCountry.orElse("There is no country!"));
-		
+
 		// if there is no country print: Then print the value: then execute this lambda method
 		System.out.println(emptyCountry.orElseGet(() -> "There is no country!"));
 		// will throw: java.util.NoSuchElementException

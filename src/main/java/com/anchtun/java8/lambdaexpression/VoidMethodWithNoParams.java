@@ -10,10 +10,10 @@ public interface VoidMethodWithNoParams {
 
 	default void sayHello() {
 		System.out.println("Hello");
-	};
+	}
 
 	static void sayBye() {
 		System.out.println("Bye");
-	};
+	}
 
 }
