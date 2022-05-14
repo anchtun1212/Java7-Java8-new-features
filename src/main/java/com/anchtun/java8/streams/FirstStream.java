@@ -48,18 +48,6 @@ public class FirstStream {
 		System.out.println("Show numbers using Arrays.stream(partOfArray, from, to):");
 		streamFromPartOfArray.forEach(System.out::println);
 
-		// generate an infinite stream of element
-		//Supplier<Integer> supplier = () -> 512;
-		//Stream<Integer> streamInfiniteGenerate = Stream.generate(supplier);
-		//System.out.println("Show numbers using Stream.generate (generate an infinite stream of element):");
-		//streamInfiniteGenerate.forEach(System.out::println);
-		
-		// iterate infinite elements
-		//UnaryOperator<Integer> multiplyBy5 = input -> input*5;
-		//multiplyBy5.apply(5);
-		//Stream<Integer> streamIterate = Stream.iterate(2, multiplyBy5);
-		//System.out.println("Show numbers using Stream.iterate:");
-		//streamIterate.forEach(System.out::println);
 	}
 
 }
