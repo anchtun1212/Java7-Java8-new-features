@@ -36,11 +36,11 @@ public class MapEnhancement {
 
 		// Entry.comparingByValue()
 		System.out.println("*******comparingByValue*******");
-		map.entrySet().stream().sorted(Entry.comparingByValue()).forEach(System.out::println);
+		map.entrySet().stream().sorted(Entry.comparingByValue()).forEachOrdered(System.out::println);
 
 		// Entry.comparingByKey()
 		System.out.println("*******comparingByKey*******");
-		map.entrySet().stream().sorted(Entry.comparingByKey()).forEach(System.out::println);
+		map.entrySet().stream().sorted(Entry.comparingByKey()).forEachOrdered(System.out::println);
 
 		// getOrDefault
 		System.out.println("*******getOrDefault*******");
