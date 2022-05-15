@@ -62,7 +62,7 @@ public class MapEnhancement {
 		map.replace("Morroco", "Rabat");
 
 		// replaceAll
-		// map.replaceAll((k, v) -> "Tunis");
+		map.replaceAll((k, v) -> v.toUpperCase());
 
 		// last print of map after changes
 		System.out.println("*******map after changes*******");
